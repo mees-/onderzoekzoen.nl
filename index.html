@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>onderzoekzoen</title>
+    <meta name="description" content="Een dikke zoen van onderzoekdoen" />
+    <meta name="keywords" content="onderzoekdoen, onderzoekdoen.nl, onderzoek, enquete" />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: url("team.avif") no-repeat center center;
+        background-size: cover;
+      }
+      .emoji {
+        font-size: 70vw;
+        opacity: 0;
+        animation: fly 3s ease-in-out forwards;
+        animation-delay: 1s; /* Add delay here */
+      }
+      @keyframes fly {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        10% {
+          transform: scale(0.1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(0.7);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://onderzoekdoen.nl">
+      <main>
+        <div class="emoji">😘</div>
+      </main>
+    </a>
+  </body>
+</html>
